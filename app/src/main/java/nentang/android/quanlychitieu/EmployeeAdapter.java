@@ -72,8 +72,8 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(mCtx);
-                builder.setTitle("Are you sure?");
-                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                builder.setTitle("Bạn có chắc chắn muốn xóa?");
+                builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String sql = "DELETE FROM employees WHERE id = ?";
@@ -81,7 +81,7 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
                         reloadEmployeesFromDatabase();
                     }
                 });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -121,13 +121,13 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
                 String dept = spinnerDepartment.getSelectedItem().toString();
 
                 if (name.isEmpty()) {
-                    editTextName.setError("Name can't be blank");
+                    editTextName.setError("Tên giao dịch không được để trống");
                     editTextName.requestFocus();
                     return;
                 }
 
                 if (salary.isEmpty()) {
-                    editTextSalary.setError("Salary can't be blank");
+                    editTextSalary.setError("Số tiền giao dịch không được để trống");
                     editTextSalary.requestFocus();
                     return;
                 }
@@ -139,7 +139,7 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
                         "WHERE id = ?;\n";
 
                 mDatabase.execSQL(sql, new String[]{name, dept, salary, String.valueOf(employee.getId())});
-                Toast.makeText(mCtx, "Employee Updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mCtx, "Thông tin Giao dịch đã được cập nhật", Toast.LENGTH_SHORT).show();
                 reloadEmployeesFromDatabase();
 
                 dialog.dismiss();

@@ -15,7 +15,7 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public static final String DATABASE_NAME = "myemployeedatabase";
+    public static final String DATABASE_NAME = "quanlychitieudatabase";
 
     TextView textViewViewEmployees;
     EditText editTextName, editTextSalary;
@@ -63,13 +63,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //dept does not need validation as it is a spinner and it cannot be empty
     private boolean inputsAreCorrect(String name, String salary) {
         if (name.isEmpty()) {
-            editTextName.setError("Please enter a name");
+            editTextName.setError("Vui lòng nhập tên Giao dịch");
             editTextName.requestFocus();
             return false;
         }
 
         if (salary.isEmpty() || Integer.parseInt(salary) <= 0) {
-            editTextSalary.setError("Please enter salary");
+            editTextSalary.setError("Vui lòng nhập Số tiền giao dịch");
             editTextSalary.requestFocus();
             return false;
         }
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //first is the sql string and second is the parameters that is to be binded with the query
             mDatabase.execSQL(insertSQL, new String[]{name, dept, joiningDate, salary});
 
-            Toast.makeText(this, "Employee Added Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Giao dịch đã được THÊM vào hệ thống", Toast.LENGTH_SHORT).show();
         }
     }
 

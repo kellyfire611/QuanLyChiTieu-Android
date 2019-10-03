@@ -1,4 +1,4 @@
-package com.example.crudsqlite;
+package nentang.android.quanlychitieu;
 
 import org.junit.Test;
 

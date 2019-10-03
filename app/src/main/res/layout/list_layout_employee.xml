@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@color/colorPrimary"
-            android:text="Edit" />
+            android:text="SỬA" />
 
         <Button
             android:id="@+id/buttonDeleteEmployee"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@color/colorAccent"
-            android:text="Delete" />
+            android:text="XÓA" />
 
     </LinearLayout>
 </LinearLayout>
