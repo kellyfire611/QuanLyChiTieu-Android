@@ -10,90 +10,69 @@
     android:paddingRight="10dp"
     android:paddingTop="5dp">
 
-    <LinearLayout
-        android:layout_width="230dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Belal Khan"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-        <TextView
-            android:id="@+id/textViewName"
-            android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textViewDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Technical"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="INR 40000"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textViewJoiningDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2017-09-30 10:00:00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEditEmployee"
+            android:layout_width="37dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:text="Belal Khan"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@android:drawable/ic_menu_edit" />
 
-        <TextView
-            android:id="@+id/textViewDepartment"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/buttonDeleteEmployee"
+            style="@style/CustomButton"
+            android:layout_width="42dp"
             android:layout_height="wrap_content"
-            android:text="Technical"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
-
-        <TextView
-            android:id="@+id/textViewSalary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="INR 40000"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
-
-        <TextView
-            android:id="@+id/textViewJoiningDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="2017-09-30 10:00:00" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/buttonEditEmployee"
-                android:layout_width="102dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@color/colorPrimary"
-                android:drawableLeft="@android:drawable/ic_menu_edit"
-                android:text="SỬA" />
-
-            <Button
-                android:id="@+id/buttonDeleteEmployee"
-                style="@style/CustomButton"
-                android:layout_width="101dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:drawableLeft="@android:drawable/ic_delete"
-                android:text="XÓA" />
-
-        </LinearLayout>
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:drawableLeft="@android:drawable/ic_delete" />
 
     </LinearLayout>
-
-    <!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="80dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/ic_launcher_background" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/txtTitle"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:text="Title"-->
-<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
-<!--        android:textStyle="bold" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/txtDescription"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:text="Description"-->
-<!--        android:textAppearance="?android:attr/textAppearanceSmall" />-->
 </LinearLayout>
