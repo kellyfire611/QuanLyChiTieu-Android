@@ -50,6 +50,7 @@
 
         <Button
             android:id="@+id/buttonAddEmployee"
+            style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="LƯU GIAO DỊCH" />
@@ -58,10 +59,12 @@
             android:id="@+id/textViewViewEmployees"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/OurBlue"
             android:padding="16dp"
             android:text="Kiểm tra Danh sách Giao dịch"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_light"
             android:textStyle="bold" />
 
     </LinearLayout>

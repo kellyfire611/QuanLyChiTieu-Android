@@ -52,14 +52,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@color/colorPrimary"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
             android:text="SỬA" />
 
         <Button
             android:id="@+id/buttonDeleteEmployee"
+            style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:background="@color/colorAccent"
+            android:drawableLeft="@android:drawable/ic_delete"
             android:text="XÓA" />
 
     </LinearLayout>

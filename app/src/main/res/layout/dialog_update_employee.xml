@@ -42,5 +42,6 @@
         android:id="@+id/buttonUpdateEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/border_dashed"
         android:text="CẬP NHẬT" />
 </LinearLayout>
