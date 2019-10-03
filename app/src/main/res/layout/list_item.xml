@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Belal Khan"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textViewDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textViewSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INR 40000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textViewJoiningDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2017-09-30 10:00:00" />
+
+        <Button
+            android:id="@+id/buttonEditEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:text="SỬA" />
+
+        <Button
+            android:id="@+id/buttonDeleteEmployee"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:text="XÓA" />
+    </LinearLayout>
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:src="@drawable/ic_launcher_background"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_toRightOf="@id/imageView"-->
+<!--        android:text="Title"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtDescription"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="@id/txtTitle"-->
+<!--        android:layout_below="@id/txtTitle"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Description"-->
+<!--        android:textAppearance="?android:attr/textAppearanceSmall" />-->
+</RelativeLayout>
